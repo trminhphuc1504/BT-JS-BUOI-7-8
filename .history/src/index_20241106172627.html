@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>BTVN-JS-7-8</title>
+  </head>
+  <body class="bg-gray-100 p-5">
+    <div class="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6">
+      <h1 class="text-2xl font-bold text-center text-yellow-600 mb-4">
+        Bài Tập Về Nhà
+      </h1>
+      <div class="mb-4">
+        <input
+          type="text"
+          id="inputArray"
+          placeholder="Nhập dãy số cách nhau bởi dấu phẩy"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-yellow-300"
+        />
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <button
+          onclick="sumPositive()"
+          class="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
+        >
+          Tổng số dương
+        </button>
+        <button
+          onclick="countPositive()"
+          class="bg-green-500 text-white py-2 rounded-md hover:bg-green-600"
+        >
+          Đếm số dương
+        </button>
+        <button
+          onclick="findMin()"
+          class="bg-purple-500 text-white py-2 rounded-md hover:bg-purple-600"
+        >
+          Tìm số nhỏ nhất
+        </button>
+        <button
+          onclick="findPositiveMin()"
+          class="bg-indigo-500 text-white py-2 rounded-md hover:bg-indigo-600"
+        >
+          Số dương nhỏ nhất
+        </button>
+        <button
+          onclick="findLastEven()"
+          class="bg-pink-500 text-white py-2 rounded-md hover:bg-pink-600"
+        >
+          Số chẵn cuối cùng
+        </button>
+      </div>
+      <div class="mb-4">
+        <input
+          type="number"
+          id="index1"
+          placeholder="Vị trí 1"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-yellow-300 mb-2"
+        />
+        <input
+          type="number"
+          id="index2"
+          placeholder="Vị trí 2"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-yellow-300"
+        />
+        <button
+          onclick="swapValues()"
+          class="mt-3 w-full bg-red-500 text-white font-semibold py-2 rounded-md hover:bg-red-600"
+        >
+          Đổi chỗ giá trị
+        </button>
+      </div>
+      <div
+        id="result"
+        class="text-center text-lg font-medium text-gray-700 mt-4"
+      ></div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
